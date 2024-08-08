@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header</title>
+    <link rel="stylesheet" href="Header.css">
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.2.3-dist/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="header" class="Header navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <h1 class="HeaderLogo">
+            <a id="header-logo" aria-current="page" href="index.html">
+              <img alt="Blue Origin: For The Benefit of Earth" src="Images/logo-blue-origin-.svg" width="189" height="48">
+            </a>
+          </h1>
+          <!-- Navigation -->
+          <nav aria-label="Featured" class="HeaderNavigation navbar-nav ms-auto" id="HeaderNavigation">
+            <ul class="HeaderNavigationList navbar-nav" id="HeaderNavigationList">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="vehiclesDropdown vehiclesDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Vehicles</a>
+                <ul class="dropdown-menu" aria-labelledby="vehiclesDropdown" id="VehichleDropdown">
+                  <li><a class="dropdown-item" href="#" id="dropdown_Item">New Shepard</a></li>
+                  <li><a class="dropdown-item" href="#" id="dropdown_Item">New Glenn</a></li>
+                  <li><a class="dropdown-item" href="#" id="dropdown_Item">Blue Moon</a></li>
+                  <li><a class="dropdown-item" href="#" id="dropdown_Item">Blue Ring</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Engines</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Destinations</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" aria-expanded="false">About</a>
+                <ul class="dropdown-menu" aria-labelledby="aboutDropdown" id="AboutDropdown">
+                  <li><a class="dropdown-item" href="#" id="dropdown_Item">About Blue</a></li>
+                  <li><a class="dropdown-item" href="#" id="dropdown_Item">Sustainability</a></li>
+                  <li><a class="dropdown-item" href="#" id="dropdown_Item">News</a></li>
+                  <li><a class="dropdown-item" href="#" id="dropdown_Item">Gallery</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" aria-expanded="false"><i class="fa-solid fa-language fa-2xl" style="color: #ffffff;"></i></a>
+                <ul class="dropdown-menu" aria-labelledby="aboutDropdown" id="LanguageDropdown">
+                    <li><a class="dropdown-item" href="#" id="dropdown_Item">English</a></li>
+                    <li><a class="dropdown-item" href="#" id="dropdown_Item">Español</a></li>
+                    <li><a class="dropdown-item" href="#" id="dropdown_Item">عربي</a></li>
+                    <li><a class="dropdown-item" href="#" id="dropdown_Item">Français</a></li>
+                    <li><a class="dropdown-item" href="#" id="dropdown_Item">Chinese中国人</a></li>
+                    <li><a class="dropdown-item" href="#" id="dropdown_Item">Português</a></li>
+                    <li><a class="dropdown-item" href="#" id="dropdown_Item">邦人</a></li>
+                    <li><a class="dropdown-item" href="#" id="dropdown_Item">عربي</a></li>
+                </ul>
+              </li>
+              <a href="#" id="FLT_btn" class="fs-5 ms-4">Fly To Space</a>
+            </ul>
+           
+            <!-- Offcanvas Toggle Button -->
+            <button class="HeaderSideNavigationTrigger btn  d-lg-block ms-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" aria-expanded="false">
+              <div class="container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+              </div>
+              <span class="visually-hidden">Fly to Space</span>
+            </button>
+          </nav>
+        </div>
+      </header>
+      <!-- Offcanvas Menu -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+          <span class="HeaderSideNavigationLogo">
+            <a id="side-nav-logo" aria-current="page" href="index.html">
+              <img alt="Blue Origin Home" src="https://d1o72l87sylvqg.cloudfront.net/blue-origin/logo-feather-optimized.svg" width="126" height="64">
+            </a>
+          </span>
+          <button type="button" class="btn" data-bs-dismiss="offcanvas" aria-label="Close" id="FlyToSpace">
+            <div class="close-icon">
+              <div class="line line-1"></div>
+              <div class="line line-2"></div>
+            </div>
+          </button>
+        </div>
+        <div class="offcanvas-body">
+          <nav aria-label="Main" class="HeaderSideNavigationListPrimary">
+            <ul class="HeaderSideNavigationList list-unstyled">
+              <li><a class="dropdown-item text-light fs-4 p-2" href="#">New Shepard</a></li>
+              <li><a class="dropdown-item text-light fs-4 p-2" href="#">New Glenn</a></li>
+              <li><a class="dropdown-item text-light fs-4 p-2" href="#">Blue Moon</a></li>
+              <li><a class="dropdown-item text-light fs-4 p-2" href="#">Blue Ring</a></li>
+              <li><a class="dropdown-item text-light fs-4 p-2" href="#">Engines</a></li>
+              <li><a class="dropdown-item text-light fs-4 p-2" href="#">Destinations</a></li>
+              <li><a class="dropdown-item text-light fs-4 p-2" href="#">About Blue</a></li>
+              <li><a class="dropdown-item text-light fs-4 p-2" href="#">Sustainability</a></li>
+              <li><a class="dropdown-item text-light fs-4 p-2" href="#">News</a></li>
+              <li><a class="dropdown-item text-light fs-4 p-2" href="#">Gallery</a></li>
+              <li><a class="dropdown-item text-light fs-4 p-2" href="#">Careers</a></li>
+              <li><a class="dropdown-item text-light fs-4 p-2" href="#">Shop</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="Header.js"></script>
+</body>
+</html>
